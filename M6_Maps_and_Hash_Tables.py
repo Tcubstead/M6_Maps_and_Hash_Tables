@@ -38,3 +38,27 @@ def load_schedule_from_csv(filename: str) -> Schedule:
 
     return schedule
 
+#various display options for the main menu
+def display_menu():
+    print("\n" + "=" * 50)
+    print("Course Schedule System")
+    print("=" * 50)
+    print("1. Display all courses")
+    print("2. Search by subject")
+    print("3. Search by subject and catalog number")
+    print("4. Search by instructor last name")
+    print("5. Exit")
+    print("=" * 50)
+
+#prints out the search results with header
+def print_rsults(items: list, schedule: Schedule):
+    if items:
+        print(f"\nFound {len(items)} course(s):\n")
+        schedule.print_header()
+        for item in items:
+            item.print()
+    else:
+        print("\nNo courses found matching your criteria.")
+
+
+
