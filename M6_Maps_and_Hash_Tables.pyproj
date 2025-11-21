@@ -22,6 +22,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="M6_Maps_and_Hash_Tables.py" />
+    <Compile Include="schedule.py" />
+    <Compile Include="schedule_item.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="STEM - Summer 2022 Schedule of Classes as of 05-02-22.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
