@@ -22,8 +22,8 @@ def load_schedule_from_csv(filename: str) -> Schedule:
                     component=row['Component'],
                     session=row['Session'],
                     units=int(row['Units']) if row['Units'] else 0,
-                    tot_enr=int(row['TotEnr']) if row['TotEnr'] else 0,
-                    cap_enr=int(row['CapEnr']) if row['CapEnr'] else 0,
+                    tot_enrl=int(row['TotEnrl']) if row['TotEnrl'] else 0,
+                    cap_enrl=int(row['CapEnrl']) if row['CapEnrl'] else 0,
                     instructor=row['Instructor']
                 )
                 schedule.add_entry(item)
